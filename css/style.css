@@ -1,0 +1,416 @@
+/******************** Typography css ********************/
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #43a6df;
+    --orange: #e55a21;
+    --gray: gray;
+    --light-white: #dddddd;
+    --light-white-1: #f2f2f2;
+    --light-white-2: #ecebe8;
+    --light-black: #1d1d1d;
+    --light-black-1: #101010;
+    --light-black-2: #2a2a2a;
+    --light-gray: #333333;
+    --light-gray-1: #555555;
+    --light-gray-2: #545454;
+    --light-gray-3: #686868;
+    --light-gray-4: #777777;
+    --light-gray-5: #999999;
+}
+
+.subscribe{
+    background-color: var(--orange);
+    width: 100%;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px 32px;
+    text-transform: uppercase;
+    border: none;
+}
+.subscribe:hover{
+    background-color: var(--light-black);
+}
+.link{
+    color: var(--orange);
+    text-decoration: none;
+}
+.link:hover{
+    color: var(--black);
+}
+.orange-btn{
+    background: var(--orange);
+    text-decoration: none;
+    display: inline-block;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 9px 12px;
+    border: none;
+    margin-bottom: 20px;
+}
+.orange-btn:hover{
+    background: var(--black);
+    color: var(--white);
+}
+.forum_star{
+    color: var(--orange);
+}
+.main-heading{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.navbar-brand{
+    display: contents;
+}
+
+/******************** Header css ********************/
+body{
+    background-color: var(--light-white-2);
+    color: var(--light-gray-2);
+}
+.navbar .container .collapse ul li{
+    border-left: 1px solid var(--light-gray);
+    padding: 10px;
+}
+.navbar .container .collapse ul li:hover{
+    background-color: var(--orange);
+}
+.navbar .container .collapse ul li i{
+    margin-top: 10px;
+    color: var(--gray);
+    font-size: 35px;
+}
+.navbar .container .collapse ul li:hover i, .navbar .container .collapse ul li:hover a{
+    color: var(--white);
+}
+
+/******************** Section css ********************/
+.post-header{
+    border-bottom: 1px solid var(--light-gray-4);
+    display: flex;
+}
+.post-header .time{
+    width: 20%;
+    height: 100px;
+    padding: 2%;
+}
+.post-header .title{
+    width: 80%;
+    border-left: 1px solid var(--light-gray-4);
+    padding: 2%;
+}
+.post-header .title h2{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.post-header .title h2 a{
+    color: var(--black);
+    text-decoration: none;
+}
+.post-header .title h2 a:hover{
+    color: var(--orange);
+}
+.post-header .months{
+    text-transform: uppercase;
+}
+.post-header .date{
+    color: var(--black);
+    font-size: 2.1em;
+    line-height: 1em;
+}
+.post-content{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.post-footer{
+    border-top: 1px solid var(--light-gray-4);
+    padding: 10px;
+    display: flex;
+}
+.post-footer span{
+    width: 18%;
+}
+.pagination span, .pagination a {
+    background-color: var(--blue);
+    border: 1px solid var(--light-white);
+    color: var(--white);
+    float: left;
+    line-height: 20px;
+    margin-right: 5px;
+    padding: 4px 12px;
+    text-decoration: none;
+}
+.pagination a:hover{
+    background: var(--orange);
+    color: var(--white);
+}
+.sidebar .widget_search input[type="text"] {
+    background: var(--light-white-1) none repeat scroll 0 0;
+    color: var(--light-gray-4);
+    float: left;
+    height: 16px;
+    padding: 10px 1% 9px 0;
+    text-indent: 8px;
+    width: 87%;
+    box-sizing: content-box;
+    border: none;
+}
+.sidebar .widget_search input[type="submit"] {
+    background-color: var(--light-white-1);
+    background-image: url(../images/search_icon.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 35px;
+    border: none;
+    padding: 0;
+    transition: ease-in-out 0s ease 0s;
+    width: 12%;
+}
+.search_button:hover {
+    background-color: var(--orange);
+}
+.sidebar .widget_title {
+    color: var(--light-gray-3);
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+.tagcloud a {
+    color: var(--light-gray-4);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 7px 7px 10px;
+    padding: 7px 14px;
+    text-transform: uppercase;
+}
+.sidebar .tagcloud a:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+.sidebar .nav-tabs li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sidebar .nav-tabs li .nav-link{
+    color: var(--light-gray-2);
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.sidebar .tab-pane ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--light-gray-1);
+    list-style-type: none;
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+}
+.tab-pane{
+    background-color: var(--white);
+}
+.widgettitle {
+    display: block;
+    font-weight: 600;
+}
+.widgettitle a {
+    color: var(--light-gray-1);
+    text-decoration: none;
+    font-weight: 700;
+}
+.widgettitle a:hover {
+    color: var(--orange);
+}
+
+/******************** Footer css ********************/
+footer, header{
+    background-color: var(--light-black-1);
+}
+footer .tags a{
+    background-color: var(--light-black-2);
+    font-size: 0.867em !important;
+    text-decoration: none;
+    color: var(--light-gray-4);
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 0 4px 4px 0;
+    padding: 7px 14px;
+    text-transform: uppercase;
+}
+footer .tags a:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+footer h3{
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+footer .post ul{
+    padding-left: 0;
+}
+footer .post ul li{
+    border-bottom: 1px solid var(--white);
+    list-style: none;
+    padding: 10px 0;
+}
+footer p{
+    color: var(--light-gray-5);
+    font-size: 0.867em;
+    margin-bottom: 10px;
+}
+footer .post ul li span{
+    font-weight: 600;
+    color: var(--light-gray-5);
+}
+footer .post ul li a{
+    text-decoration: none;
+    color: var(--light-gray-4);
+}
+footer .post ul li a:hover{
+    text-decoration: underline;
+}
+footer input{
+    background: var(--light-black-2) none repeat scroll 0 0;
+    border: 1px solid var(--light-black-1);
+    color: var(--light-gray-4);
+    display: block;
+    height: 16px;
+    margin: 0 0 10px;
+    padding: 9px 0 8px;
+    text-indent: 10px;
+    width: 100%;
+    box-sizing: content-box;
+}
+footer .copyright_text {
+    background-color: var(--black);
+    padding: 15px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+footer .copyright_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+footer .copyright_text ul li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 10px;
+}
+footer .copyright_text a {
+    color: var(--white);
+    text-decoration: none;
+}   
+footer .copyright_text a:hover {
+    text-decoration: underline;
+} 
+
+/******************** Contact css ********************/
+.map{
+    position: relative;
+}
+.contact-section{
+    position: absolute;
+    top: 13%;
+    right: 5%;
+}
+
+/*************** Our Team Css *******************/
+.team{
+    border-radius: 50px 50px 0px 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+.team:hover, .team.active{
+    background-color: var(--orange);
+    color: var(--white); 
+}
+.team:hover .social-links, .team.active .social-links{
+    background-color: var(--white);
+}
+.team:hover .social-links a, .team.active .social-links a{
+    color: var(--orange);
+}
+.team:hover .social-links a:hover{
+    color: var(--black);
+}
+.team .profile img{
+    width: 90px;
+    height: 95px;
+    margin-right: 10px;
+    border-radius: 50% 0 0 0;
+}
+.team .social-links{
+    background: var(--orange);
+    margin-top: 10px;
+    padding: 5px;
+}
+.team .social-links a{
+    margin: 0 10px;
+    color: var(--white);
+}
+.team .social-links a:hover{
+    color: var(--orange);
+}
+
+/******************** Media Query css ********************/
+@media only screen and (max-width: 990px) {
+    .navbar-brand img{
+        margin: 10px 0;
+        width: 50%;
+    }
+    header .navbar .collapse ul li{
+        text-align: left;
+        border-bottom: 1px solid var(--light-gray-4);
+        padding: 0;
+    }
+    header .navbar .collapse ul li a{
+        display: inline-block;
+        width: 80%;
+    }
+    .navbar .container .collapse ul li i{
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    .post-header .title {
+        width: 80%;
+    }
+    .post-header .months {
+        text-transform: none;
+    }
+    .post-footer span {
+        width: 35%;
+    }
+    .hidden-xs{
+        display: none;
+    }
+    .abc{
+        margin: 20px 0;
+    }
+    .map{
+        display: none;
+    }
+    .contact-section{
+        position: unset;
+        margin: 20px 0;
+    }
+    footer h3{
+        margin-top: 10px;
+    }
+    .form-control{
+        width: 100% !important;
+    }
+    .search{
+        width: 85% !important;
+    }
+}
